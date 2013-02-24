@@ -1,0 +1,27 @@
+$gray: #9E9E9E
+$bodyBackground: black
+
+@import "bootstrap"
+@import "bootstrap-responsive"
+@import "markdown"
+
+.nav-pills
+  li
+    a
+      color: white
+      &:hover, &:focus
+        background-color: lighten($gray, 5%)
+  .active
+    a
+      color: white
+      background-color: $gray
+      &:hover, &:focus
+        color: white
+        background-color: $gray
+
+#header
+  color: white
+
+#content
+  padding: 0 1% 0 1%
+  background-color: white
