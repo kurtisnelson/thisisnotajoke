@@ -1,0 +1,29 @@
+- content_for :opengraph do
+  meta property="og:type" content="article"
+  meta property="article:published_time" content=current_article.date.strftime("%Y-%m-%d")
+  -current_article.tags.each do |tag|
+    meta property="article:tag" content=tag
+
+- content_for :title, current_article.title
+- content_for :summary, current_article.summary
+- wrap_layout :layout do
+  - content_for :og_prefix, "article: http://ogp.me/ns/article#"
+  .row-fluid
+    h2.muted.pull-right== link_to current_article.date.strftime("%B %e, %l:%M%P"), blog_month_path(current_article.date.year, current_article.date.month)
+    h1 = current_article.title
+  .row-fluid
+    - current_article.tags.each do |tag|
+      span.label.label-inverse == link_to tag, tag_path(tag)
+  == yield
+  hr
+  .row-fluid
+    fb:comments.span5 href=("http://thisisnotajoke.com/"+current_path) num_posts="10"
+    .span5.offset1
+      .row-fluid
+        div.g-plusone data-size="tall"
+        span &nbsp;  
+        div.g-plus data-action="share" data-annotation="vertical-bubble" data-height="60"
+      .row-fluid  
+        fb:like send="true" width="100%" show_faces="true" colorscheme="dark"
+      .row-fluid
+        a href="https://twitter.com/share" class="twitter-share-button" data-text=current_article.title data-via="kurtisnelson" Tweet

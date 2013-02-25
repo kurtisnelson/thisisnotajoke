@@ -1,10 +1,27 @@
+- content_for :og_prefix, "blog: http://ogp.me/ns/blog#"
 DOCTYPE html
-html
-  head
+html itemtype="http://schema.org/Article" itemscope="" xmlns:fb="http://ogp.me/ns/fb#"
+  head prefix=("og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# " + yield_content(:og_prefix))
     meta charset="utf-8"
     meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
-    title #{content_for?(:title) ? yield_content(:title) + " | " : ""} Kurt Nelson
+    meta property="fb:admins" content="kurtn"
+    meta property="fb:app_id"               content="566313886720689"
+    meta property="og:url"                  content=("http://thisisnotajoke.com/"+current_path)
+    meta property="og:site_name"            content="Kurt Nelson"
+    meta property="article:author"          content="http://facebook.com/kurtn"
+    meta property="og:type"                 content="blog"
+    - if content_for? :opengraph
+      ==yield_content(:opengraph)
+    - if content_for? :title
+      title ==yield_content(:title) + " | Kurt Nelson"
+      meta itemprop="name" content=yield_content(:title)
+      meta property="og:title"                content=yield_content(:title)
+    - else
+      title Kurt Nelson
+    - if content_for? :summary
+      meta itemprop="description" content=yield_content(:summary)
+      meta property="og:description"          content=yield_content(:summary)
     == stylesheet_link_tag "application"
     == javascript_include_tag "application"
     /! Le HTML5 shim, for IE6-8 support of HTML elements
@@ -15,12 +32,12 @@ html
     #fb-root
     javascript:
       (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=appId566313886720689";
-              fjs.parentNode.insertBefore(js, fjs);
-              }(document, 'script', 'facebook-jssdk'));
+        var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=566313886720689";
+                fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
     javascript:
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-584985-1']);
@@ -39,9 +56,26 @@ html
           == nav_link_to "Contact", "/contact.html"
         h2 Kurt Nelson
         h3.muted My various random ramblings
+      -if is_blog_article?
+        .row-fluid
+          ul.breadcrumb.offset2.span8
+            li
+              ==link_to current_article.date.year, blog_year_path(current_article.date.year)
+              span.divider
+                | /
+            li
+              ==link_to current_article.date.month, blog_month_path(current_article.date.year, current_article.date.month)
+              span.divider
+                | /
+            li
+              ==link_to current_article.date.day, blog_day_path(current_article.date.year, current_article.date.month, current_article.date.day)
+              span.divider
+                | /
+            li.active=current_article.title
       .row-fluid
-        #content.offset2.span8
-          - if content_for?(:title)
+        .span2
+        #content.span8
+          - if content_for?(:title) && !is_blog_article?
             h1 == yield_content(:title)
           == yield
       br
@@ -51,6 +85,17 @@ html
           == Time.now.year
           |  Kurt Nelson
         .span2
-          a href="https://twitter.com/kurtisnelson" class="twitter-follow-button" data-show-count="false" data-size="large" Follow @kurtisnelson
-          javascript:
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+          a href="//plus.google.com/113845599653246070922?prsrc=3" rel="publisher" style="text-decoration:none;display:inline-block;color:#333;text-align:center; font:13px/16px arial,sans-serif;white-space:nowrap;"
+            span style="display:inline-block;font-weight:bold;vertical-align:top;margin-right:5px; margin-top:0px;" Kurt
+            span style="display:inline-block;vertical-align:top;margin-right:13px; margin-top:0px;" on
+            img src="//ssl.gstatic.com/images/icons/gplus-16.png" alt="Google+" style="border:0;width:16px;height:16px;"
+        .span2
+          a href="https://twitter.com/kurtisnelson" class="twitter-follow-button" data-show-count="true" Follow @kurtisnelson
+      javascript:
+        (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                po.src = 'https://apis.google.com/js/plusone.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                      })();
+      javascript:
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");

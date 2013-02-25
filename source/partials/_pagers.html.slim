@@ -1,0 +1,10 @@
+- if paginate && num_pages > 1
+  ul.pager
+    - if prev_page
+      li.previous == link_to "&larr; Older", prev_page
+    - else
+      li.previous.disabled == link_to "&larr; Older", "#"
+    - if next_page
+      li.next == link_to "Newer &rarr;", next_page
+    - else
+      li.next.disabled == link_to "Newer &rarr;", "#"

@@ -1,0 +1,16 @@
+---
+pageable: true
+per_page: 5
+---
+
+- blog.articles.each_with_index do |article, i|
+  -if i > 0
+    hr
+  .row-fluid
+    h3.muted.pull-right= article.date.strftime('%B %e, %l:%M%P')
+    h2== link_to article.title, article
+  == article.summary
+  p==link_to "Read more", article
+
+
+== partial "partials/pagers"

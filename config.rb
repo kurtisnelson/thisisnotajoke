@@ -1,3 +1,13 @@
+Time.zone = "America/New_York"
+activate :blog do |blog|
+  blog.layout = "blog_layout"
+  blog.paginate = true
+  blog.permalink = "blog/:year/:month/:title"
+  blog.sources = "posts/:year-:month-:day-:title"
+  blog.taglink = "tags/:tag.html"
+  blog.tag_template = "tag.html"
+  blog.calendar_template = "calendar.html"
+end
 ###
 # Compass
 ###
@@ -13,7 +23,8 @@ require 'bootstrap-sass'
 # Per-page layout changes:
 #
 # With no layout
-# page "/path/to/file.html", :layout => false
+page "/feed.xml", layout: false
+page "/sitemap.xml", layout: false
 #
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
