@@ -23,7 +23,7 @@ html itemtype="http://schema.org/Article" itemscope="" xmlns:fb="http://ogp.me/n
       meta property="og:title" content="Kurt Nelson"
       title Kurt Nelson
     - if content_for? :summary
-      meta itemprop="description" content=yield_content(:summary)..gsub(/<\/?[^>]*>/, "")
+      meta itemprop="description" content=yield_content(:summary).gsub(/<\/?[^>]*>/, "")
       meta property="og:description"          content=yield_content(:summary).gsub(/<\/?[^>]*>/, "")
     - else
       meta property="og:description" content="A mix of philosophy, technology, and college life with creative and obscure writing about those mixed in."

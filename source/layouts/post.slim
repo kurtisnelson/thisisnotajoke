@@ -17,13 +17,12 @@
   == yield
   hr
   .row-fluid
-    fb:comments.span5 href=("http://thisisnotajoke.com/"+current_path) num_posts="10"
-    .span5.offset1
-      .row-fluid
+    .span6
         div.g-plusone data-size="tall"
         span &nbsp;  
         div.g-plus data-action="share" data-annotation="vertical-bubble" data-height="60"
-      .row-fluid  
+    .span6
         fb:like send="true" width="100%" show_faces="true" colorscheme="dark"
-      .row-fluid
         a href="https://twitter.com/share" class="twitter-share-button" data-text=current_article.title data-via="kurtisnelson" Tweet
+  .row-fluid
+    fb:comments href=("http://thisisnotajoke.com/"+current_path) num_posts="10"
