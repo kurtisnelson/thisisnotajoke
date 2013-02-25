@@ -23,8 +23,8 @@ html itemtype="http://schema.org/Article" itemscope="" xmlns:fb="http://ogp.me/n
       meta property="og:title" content="Kurt Nelson"
       title Kurt Nelson
     - if content_for? :summary
-      meta itemprop="description" content=yield_content(:summary)
-      meta property="og:description"          content=yield_content(:summary)
+      meta itemprop="description" content=yield_content(:summary)..gsub(/<\/?[^>]*>/, "")
+      meta property="og:description"          content=yield_content(:summary).gsub(/<\/?[^>]*>/, "")
     - else
       meta property="og:description" content="A mix of philosophy, technology, and college life with creative and obscure writing about those mixed in."
       meta itemprop="description" content="A mix of philosophy, technology, and college life with creative and obscure writing about those mixed in."
@@ -91,6 +91,8 @@ html itemtype="http://schema.org/Article" itemscope="" xmlns:fb="http://ogp.me/n
           | &copy;
           == Time.now.year
           |  Kurt Nelson
+        .span2
+          div.g-plusone data-size="tall" data-annotation="inline" data-width="300"
         .span2
           a href="//plus.google.com/113845599653246070922?prsrc=3" rel="publisher" style="text-decoration:none;display:inline-block;color:#333;text-align:center; font:13px/16px arial,sans-serif;white-space:nowrap;"
             span style="display:inline-block;font-weight:bold;vertical-align:top;margin-right:5px; margin-top:0px;" Kurt
