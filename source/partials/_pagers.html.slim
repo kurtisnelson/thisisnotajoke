@@ -1,10 +1,10 @@
 - if num_pages > 0
   ul.pager
-    - if prev_page
-      li.previous == link_to "&larr; Older", prev_page
+    - if next_page
+      li.previous == link_to "&larr; Older", next_page
     - else
       li.previous.disabled == link_to "&larr; Older", "#"
-    - if next_page
-      li.next == link_to "Newer &rarr;", next_page
+    - if prev_page
+      li.next == link_to "Newer &rarr;", prev_page
     - else
       li.next.disabled == link_to "Newer &rarr;", "#"
