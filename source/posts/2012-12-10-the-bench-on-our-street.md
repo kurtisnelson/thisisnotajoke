@@ -1,0 +1,18 @@
+---
+layout: post
+title: 'The bench on our street'
+
+---
+
+<p>I'm sitting outside on a bench, a bench I've been sitting outside on for hours now. From here, I can see so many, so much more than enough to keep my mind occupied. All walks of humanity walk by, some with their kids, some with their lover, some with nobody, but none in a hurry. They are here to relax and to clear their minds, soothing music plays in the background. This place is timeless, it has been the same for decades, and will be for many more. This is why people return year after year, borrowing funds to visit, morgaging the rest of their year for one joyous relaxing week here.</p>
+
+<p>And I, why? I sit to sit, to observe, to question, to ponder over all the others that come by. For I, I have lived here. I have stayed here more than most, many late nights right here on this street, a piece of the street, one of the many bricks that gives it it's magical ability to calm, to sooth, and to glisten.</p>
+
+<p>But today I am not a brick, but an observer, on the outside not noticed by the guests of the street but only by the other fixtures. The same fixtures that have been here for years, and will be here for years. The fixtures that work tirelessly to maintain the street, at the cost of their livelyhood and family. For tending the street pays next to nothing, the greatest benefit for tending the street is the ability to access it at any time, during work, play, to stay over night when the street is silent, to be able to tell others that you are a part of the street, the street that is primary to so many's experiences, this main street. My life is this street, my well being is in this street, my relaxation is in this street. This street is like none other, and I am entranced by it.</p>
+
+<p>Tonight it fully comes to life around me. I can sit here and be entertained for hours by a series of events that climaxes on top of the sky, bright enough to fill the entire night of the street and beyond, leaving the visitors in hushed but full spirits, to voyage back home as one sea of humanity with a common experience: The opportunity to dream, to wish, to fear, to love, to feel, to have be tugged at the depths of their hearts and the bredth of their memories, fully whelmed by it all.</p>
+
+<p>I on the other hand am jaded by the countless times I've seen it all. The whining kid in the stroller, not appreciating the great lengths to which his parents have gone to bring him here. The tired, hopeless worker trying to entertain that kid, make him appreciate all his parents have done for him, only to then go home to deal with her crying children whom she is unable to feed. The fighting couple who are ignoring their innocent child who does not know how to handle them, who just wishes they would shut up and appreciate their surroundings, how mere feet below there are miles of paths that smell of old popcorn and sweets, with rotten liquids dripping from the ceiling, and the napping immigrant working the 3rd shift trying to cobble enough funds to bring his family here with him. The Brinks truck crawling in that same tunnel to collect the millions of dollars in pure profits stored under the street, all to be whisked away to the shareholders of the street, none to be given to the residents of it.</p>
+
+<p>I'm still here on the bench, the street is in the stage of the night where the last guests are straggling out, it's just me and the fellow protectors. For as soon as the last guest is gone, the street will spring into a completely different form of life, one of artificiality, the double life of the street that in the daylight seems peaceful and perfect, but in the moonlight consists of something far more sinister.</p>
+

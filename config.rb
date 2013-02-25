@@ -1,6 +1,6 @@
 Time.zone = "America/New_York"
 activate :blog do |blog|
-  blog.layout = "blog_layout"
+  blog.layout = "post"
   blog.paginate = true
   blog.permalink = "blog/:year/:month/:title"
   blog.sources = "posts/:year-:month-:day-:title"
