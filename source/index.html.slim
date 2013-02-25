@@ -3,7 +3,7 @@ pageable: true
 per_page: 5
 ---
 
-- blog.articles.each_with_index do |article, i|
+- page_articles.each_with_index do |article, i|
   -if i > 0
     hr
   .row-fluid
@@ -12,5 +12,4 @@ per_page: 5
   == article.summary
   p==link_to "Read more", article
 
-
-== partial "partials/pagers"
+== partial "partials/pagers", locals: {prev_page: prev_page, next_page: next_page, num_pages: num_pages}

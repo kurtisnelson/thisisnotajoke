@@ -15,4 +15,4 @@ dl
     dt= article.date.strftime('%b %e')
     dd == link_to article.title, article
 
-== partial "partials/pagers"
+== partial "partials/pagers", locals: {prev_page: prev_page, next_page: next_page, num_pages: num_pages}
