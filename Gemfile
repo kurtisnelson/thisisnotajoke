@@ -1,17 +1,14 @@
-source :rubygems
+source "https://rubygems.org"
 
 gem "compass"
-gem "bootstrap-sass"
+gem "bootstrap-sass", require: false
 gem "slim"
 gem "therubyracer", '~> 0.11.3'
 gem "rack-rewrite"
 gem "redcarpet"
-gem "middleman"
+gem "middleman", "3.1.0.beta.1"
 gem "middleman-blog"
 gem "middleman-sync"
 gem "thin"
 
-group :development do
-  gem "foreman"
-  gem "libv8"
-end
+gem "rb-fsevent"
