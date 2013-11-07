@@ -55,8 +55,8 @@ html itemtype="http://schema.org/Article" itemscope="" xmlns:fb="http://ogp.me/n
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
 
-    .container-fluid
-      #header.row-fluid
+    .container
+      #header.row
         ul.nav.nav-pills.pull-right
           == nav_link_to "Home", "/index.html"
           == nav_link_to "Resume", "/resume.html"
@@ -64,7 +64,7 @@ html itemtype="http://schema.org/Article" itemscope="" xmlns:fb="http://ogp.me/n
         h2 Kurt Nelson
         h3.muted My various random ramblings
       -if is_blog_article?
-        .row-fluid
+        .row
           ul.breadcrumb.offset2.span8
             li
               ==link_to current_article.date.year, blog_year_path(current_article.date.year)
@@ -79,14 +79,14 @@ html itemtype="http://schema.org/Article" itemscope="" xmlns:fb="http://ogp.me/n
               span.divider
                 | /
             li.active=current_article.title
-      .row-fluid
+      .row
         .span2
         #content.span8
           - if content_for?(:title) && !is_blog_article?
             h1 == yield_content(:title)
           == yield
       br
-      .row-fluid
+      .row
         p.span2
           | &copy;
           == Time.now.year
