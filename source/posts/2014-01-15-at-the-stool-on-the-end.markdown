@@ -4,7 +4,7 @@ date: 2014-01-15 23:28 EST
 tags: atlanta
 ---
 
-A man just sits at the bar the whole night, at the stool on the end. People hover around him, never really stopping to talk; yet he drinks out of a distinct glass the only one of it's type in sight, a tall round glass with a handle sticking cleanly out of the side, not quite a mug, not quite a tumbler. It has letters engraved on the side of it, clean and clearly: "SAL". He clearly has a name around here, but why does he look so lonely and forlorn? He does not have a name out there, only in here at the stool at the end. Anywhere else he has near unlimited resources, an army of subordinates to call on, money for anything he wants, yet he chooses to sit at the bar the whole night, at the stool on the end. It is because what he gets in here is different; to him this drunken state is his reality and this reality his bad drunken dream.
+A man just sits at the bar the whole night, at the stool on the end. People hover around him, never really stopping to talk. He drinks out of a distinct glass, the only one of its type in sight: a tall round glass with a handle sticking cleanly out of the side, not quite a mug, not quite a tumbler. It has letters engraved on the side of it, clean and clearly: "SAL". He clearly has a name around here, but why does he look so lonely and forlorn? He does not have a name out there, only in here at the stool at the end. Anywhere else he has near unlimited resources, an army of subordinates to call on, money for anything he wants, yet he chooses to sit at the bar the whole night, at the stool on the end. It is because what he gets in here is different; to him this drunken state is his reality and this reality his bad drunken dream.
 
 And I do not fault him a bit.
 
