@@ -1,5 +1,4 @@
 - content_for :og_prefix, "blog: http://ogp.me/ns/blog#"
-DOCTYPE html
 html itemtype="http://schema.org/Article" itemscope="" xmlns:fb="http://ogp.me/ns/fb#"
   head prefix=("og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# " + yield_content(:og_prefix))
     meta charset="utf-8"
@@ -69,15 +68,12 @@ html itemtype="http://schema.org/Article" itemscope="" xmlns:fb="http://ogp.me/n
             li
               ==link_to current_article.date.year, blog_year_path(current_article.date.year)
               span.divider
-                | /
             li
               ==link_to current_article.date.month, blog_month_path(current_article.date.year, current_article.date.month)
               span.divider
-                | /
             li
               ==link_to current_article.date.day, blog_day_path(current_article.date.year, current_article.date.month, current_article.date.day)
               span.divider
-                | /
             li.active=current_article.title
       .row
         .span2

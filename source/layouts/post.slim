@@ -5,8 +5,10 @@
     meta property="article:tag" content=tag
 
 - content_for :title, current_article.title
+
 - content_for :summary, current_article.summary
-- wrap_layout :layout do
+
+= wrap_layout :layout do
   - content_for :og_prefix, "article: http://ogp.me/ns/article#"
   .row
     h2.muted.pull-right== link_to current_article.date.strftime("%B %e, %l:%M%P"), blog_month_path(current_article.date.year, current_article.date.month)

@@ -8,49 +8,15 @@ activate :blog do |blog|
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
 end
-###
-# Compass
-###
-
-
-# Change Compass configuration
-
-###
-# Page options, layouts, aliases and proxies
-###
 
 # Per-page layout changes:
 #
 # With no layout
 page "/feed.xml", layout: false
 page "/sitemap.xml", layout: false
-#
-# With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
-#
-# A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
-
-# Proxy (fake) files
-# page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
-#   @which_fake_page = "Rendering a fake page with a variable"
-# end
-
-###
-# Helpers
-###
 
 # Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
-
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+activate :automatic_image_sizes
 
 set :css_dir, 'css'
 
@@ -72,12 +38,6 @@ configure :build do
 
   # Use relative URLs
   # activate :relative_assets
-
-  # Compress PNGs after build
-  # First: gem install middleman-smusher
-
-  # Or use a different image path
-  # set :http_path, "/Content/images/"
 end
 
 helpers do
