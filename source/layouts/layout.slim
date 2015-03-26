@@ -36,15 +36,6 @@ html itemtype="http://schema.org/Article" itemscope="" xmlns:fb="http://ogp.me/n
       = javascript_include_tag "http://html5shim.googlecode.com/svn/trunk/html5.js"
     link href="images/favicon.ico" rel="shortcut icon"
   body
-    #fb-root
-    javascript:
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-              js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=566313886720689";
-                fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));
     javascript:
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-584985-1']);
@@ -55,53 +46,39 @@ html itemtype="http://schema.org/Article" itemscope="" xmlns:fb="http://ogp.me/n
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
 
-    .container
-      #header.row
-        ul.nav.nav-pills.pull-right
+    .blog-masthead
+      .container
+        nav.blog-nav
           == nav_link_to "Home", "/index.html"
           == nav_link_to "Resume", "http://www.linkedin.com/in/kurtnelson"
           == nav_link_to "Contact", "/contact.html"
-        h2 Kurt Nelson
-        h3.muted My various random ramblings
-      -if is_blog_article?
-        .row
-          ul.breadcrumb.offset2.span8
-            li
-              ==link_to current_article.date.year, blog_year_path(current_article.date.year)
-              span.divider
-            li
-              ==link_to current_article.date.month, blog_month_path(current_article.date.year, current_article.date.month)
-              span.divider
-            li
-              ==link_to current_article.date.day, blog_day_path(current_article.date.year, current_article.date.month, current_article.date.day)
-              span.divider
-            li.active=current_article.title
+    .container
+      .blog-header
+        h1.blog-title Kurt Nelson
+        -if is_blog_article?
+          .row
+            ul.breadcrumb.col-md-4
+              li
+                ==link_to current_article.date.year, blog_year_path(current_article.date.year)
+                span.divider
+              li
+                ==link_to current_article.date.month, blog_month_path(current_article.date.year, current_article.date.month)
+                span.divider
+              li
+                ==link_to current_article.date.day, blog_day_path(current_article.date.year, current_article.date.month, current_article.date.day)
+                span.divider
+              li.active=current_article.title
       .row
-        .span2
-        #content.span8
+        .blog-main
           - if content_for?(:title) && !is_blog_article?
             h1 == yield_content(:title)
           == yield
-      br
-      .row
-        p.span2
-          | &copy;
-          == Time.now.year
-          |  Kurt Nelson
-        .span2
-          div.g-plusone data-size="tall" data-annotation="inline" data-width="300"
-        .span2
-          a href="//plus.google.com/113845599653246070922?prsrc=3" rel="publisher" style="text-decoration:none;display:inline-block;color:#333;text-align:center; font:13px/16px arial,sans-serif;white-space:nowrap;"
-            span style="display:inline-block;font-weight:bold;vertical-align:top;margin-right:5px; margin-top:0px;" Kurt
-            span style="display:inline-block;vertical-align:top;margin-right:13px; margin-top:0px;" on
-            img src="//ssl.gstatic.com/images/icons/gplus-16.png" alt="Google+" style="border:0;width:16px;height:16px;"
-        .span2
-          a href="https://twitter.com/kurtisnelson" class="twitter-follow-button" data-show-count="true" Follow @kurtisnelson
-      javascript:
-        (function() {
-            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                po.src = 'https://apis.google.com/js/plusone.js';
-                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-                      })();
-      javascript:
-        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    footer.blog-footer
+      p
+        | &copy;
+        == Time.now.year
+        |  Kurt Nelson
+      p
+        a href="https://twitter.com/kurtisnelson" class="twitter-follow-button" data-show-count="true" Follow @kurtisnelson
+    javascript:
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");

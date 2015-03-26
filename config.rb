@@ -43,10 +43,11 @@ end
 helpers do
   def nav_link_to(link, url, opts={})
     if "/" + request.path == url
-      prefix = '<li class="active">' 
+      classes = 'blog-nav-item active'
     else
-      prefix = '<li>'
+      classes = 'blog-nav-item'
     end
-    prefix + link_to(link, url, opts) + "</li>"
+    opts[:class] = classes
+    link_to(link, url, opts)
   end
 end
