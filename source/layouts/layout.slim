@@ -62,6 +62,7 @@ html itemtype="http://schema.org/Article" itemscope="" xmlns:fb="http://ogp.me/n
               li = current_article.title
       .blog-main
         - if content_for?(:title) && !is_blog_article?
+          br
           h1 == yield_content(:title)
         == yield
     footer.blog-footer
@@ -69,3 +70,6 @@ html itemtype="http://schema.org/Article" itemscope="" xmlns:fb="http://ogp.me/n
         | &copy;
         == Time.now.year
         |  Kurt Nelson
+      a href="https://twitter.com/kurtisnelson" class="twitter-follow-button" data-show-count="true" Follow @kurtisnelson
+javascript:
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
