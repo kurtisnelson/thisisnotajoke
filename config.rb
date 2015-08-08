@@ -1,4 +1,5 @@
 Time.zone = "America/New_York"
+activate :livereload
 activate :blog do |blog|
   blog.layout = "post"
   blog.paginate = true

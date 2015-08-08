@@ -1,1 +1,1 @@
-web: middleman server
+web: middleman server -p $PORT
