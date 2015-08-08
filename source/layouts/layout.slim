@@ -56,17 +56,11 @@ html itemtype="http://schema.org/Article" itemscope="" xmlns:fb="http://ogp.me/n
       .blog-header
         -if is_blog_article?
           .row
-            ul.breadcrumb.col-md-4
-              li
-                ==link_to current_article.date.year, blog_year_path(current_article.date.year)
-                span.divider
-              li
-                ==link_to current_article.date.month, blog_month_path(current_article.date.year, current_article.date.month)
-                span.divider
-              li
-                ==link_to current_article.date.day, blog_day_path(current_article.date.year, current_article.date.month, current_article.date.day)
-                span.divider
-              li.active=current_article.title
+              ul.breadcrumb
+                li = link_to current_article.date.year, blog_year_path(current_article.date.year)
+                li = link_to current_article.date.month, blog_month_path(current_article.date.year, current_article.date.month)
+                li = link_to current_article.date.day, blog_day_path(current_article.date.year, current_article.date.month, current_article.date.day)
+                li = current_article.title
       .row
         .blog-main
           - if content_for?(:title) && !is_blog_article?
