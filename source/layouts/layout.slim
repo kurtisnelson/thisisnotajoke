@@ -54,7 +54,6 @@ html itemtype="http://schema.org/Article" itemscope="" xmlns:fb="http://ogp.me/n
           == nav_link_to "Contact", "/contact.html"
     .container
       .blog-header
-        h1.blog-title Kurt Nelson
         -if is_blog_article?
           .row
             ul.breadcrumb.col-md-4
@@ -78,7 +77,3 @@ html itemtype="http://schema.org/Article" itemscope="" xmlns:fb="http://ogp.me/n
         | &copy;
         == Time.now.year
         |  Kurt Nelson
-      p
-        a href="https://twitter.com/kurtisnelson" class="twitter-follow-button" data-show-count="true" Follow @kurtisnelson
-    javascript:
-      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
