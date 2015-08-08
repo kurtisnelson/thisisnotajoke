@@ -50,22 +50,20 @@ html itemtype="http://schema.org/Article" itemscope="" xmlns:fb="http://ogp.me/n
       .container
         nav.blog-nav
           == nav_link_to "Home", "/index.html"
-          == nav_link_to "Resume", "http://www.linkedin.com/in/kurtnelson"
+          == nav_link_to "LinkedIn", "http://www.linkedin.com/in/kurtnelson"
           == nav_link_to "Contact", "/contact.html"
     .container
-      .blog-header
-        -if is_blog_article?
-          .row
-              ul.breadcrumb
-                li = link_to current_article.date.year, blog_year_path(current_article.date.year)
-                li = link_to current_article.date.month, blog_month_path(current_article.date.year, current_article.date.month)
-                li = link_to current_article.date.day, blog_day_path(current_article.date.year, current_article.date.month, current_article.date.day)
-                li = current_article.title
-      .row
-        .blog-main
-          - if content_for?(:title) && !is_blog_article?
-            h1 == yield_content(:title)
-          == yield
+      -if is_blog_article?
+        .blog-header.row
+            ul.breadcrumb
+              li = link_to current_article.date.year, blog_year_path(current_article.date.year)
+              li = link_to current_article.date.month, blog_month_path(current_article.date.year, current_article.date.month)
+              li = link_to current_article.date.day, blog_day_path(current_article.date.year, current_article.date.month, current_article.date.day)
+              li = current_article.title
+      .blog-main
+        - if content_for?(:title) && !is_blog_article?
+          h1 == yield_content(:title)
+        == yield
     footer.blog-footer
       p
         | &copy;
