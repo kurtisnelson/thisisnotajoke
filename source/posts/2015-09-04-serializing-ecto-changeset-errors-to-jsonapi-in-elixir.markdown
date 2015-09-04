@@ -10,8 +10,8 @@ The view below is enough to render errors properly in Ember but could be improve
 
 
 ```elixir
-defmodule Bouncer.ChangesetView do
-  use Bouncer.Web, :view
+defmodule App.ChangesetView do
+  use App.Web, :view
 
   def render("error.json", %{changeset: changeset}) do
     errors = Enum.map(changeset.errors, fn {field, detail} ->
