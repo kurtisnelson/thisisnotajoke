@@ -18,6 +18,7 @@ page "/sitemap.xml", layout: false
 
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
+activate :syntax
 
 set :css_dir, 'css'
 
@@ -25,6 +26,7 @@ set :js_dir, 'js'
 
 set :images_dir, 'img'
 
+set :markdown, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true
 set :markdown_engine, :redcarpet
 
 # Build-specific configuration
