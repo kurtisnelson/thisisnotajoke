@@ -2,6 +2,7 @@ source "https://rubygems.org"
 ruby '2.2.3'
 
 gem "bootstrap-sass", require: false
+gem "builder"
 gem "slim"
 gem "redcarpet"
 gem "middleman"
