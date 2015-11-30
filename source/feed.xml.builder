@@ -2,9 +2,9 @@ xml.instruct!
 xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
   xml.title "Kurt Nelson"
   xml.subtitle "My random ramblings"
-  xml.id "http://thisisnotajoke.com/"
-  xml.link "href" => "http://thisisnotajoke.com/"
-  xml.link "href" => "http://thisisnotajoke.com/feed.xml", "rel" => "self"
+  xml.id "http://www.thisisnotajoke.com/"
+  xml.link "href" => "http://www.thisisnotajoke.com/"
+  xml.link "href" => "http://www.thisisnotajoke.com/feed.xml", "rel" => "self"
   xml.updated blog.articles.first.date.to_time.iso8601
   xml.author { xml.name "Kurt Nelson" }
 

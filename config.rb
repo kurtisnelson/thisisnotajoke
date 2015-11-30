@@ -40,7 +40,7 @@ configure :build do
   activate :asset_hash, ignore: 'avatar.*'
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 end
 
 helpers do
