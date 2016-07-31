@@ -45,7 +45,7 @@ end
 
 helpers do
   def nav_link_to(link, url, opts={})
-    if "/" + request.path == url
+    if "/" + current_page.path == url
       classes = 'blog-nav-item active'
     else
       classes = 'blog-nav-item'

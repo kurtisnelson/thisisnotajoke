@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 ruby '2.3.0'
 
-gem "bootstrap-sass", require: false
+gem "bootstrap-sass"
 gem "builder"
 gem "slim"
 gem "redcarpet"
