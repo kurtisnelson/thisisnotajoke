@@ -13,7 +13,7 @@
   .blog-post
     h2.blog-post-title = current_article.title
     .blog-post-meta
-      .col-md-4.col-xs-6 == link_to current_article.date.strftime("%B %e, %l:%M%P %Z"), blog_month_path(current_article.date.year, current_article.date.month)
+      .col-md-4.col-xs-6 == link_to current_article.date.strftime("%B %e %Y, %l:%M%P %Z"), blog_month_path(current_article.date.year, current_article.date.month)
       .col-md-4.col-xs-6.pull-right
         - current_article.tags.each do |tag|
           span.label.label-default == link_to tag, tag_path(tag)

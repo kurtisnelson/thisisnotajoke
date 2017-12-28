@@ -6,7 +6,7 @@ h1.blog-title Kurt Nelson
 - page_articles.each_with_index do |article, i|
   .blog-post
     h2.blog-post-title== link_to article.title, article
-    p.blog-post-meta= article.date.strftime('%B %e, %l:%M%P')
+    p.blog-post-meta= article.date.strftime('%B %e %Y, %l:%M%P')
     == article.summary
     p==link_to "Read more", article
 
