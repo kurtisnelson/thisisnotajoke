@@ -1,3 +1,3 @@
-To develop locally, do
 `bundle install`
-`bundle exec foreman start`
+`./compile_resume.sh`
+`bundle exec rake publish`
