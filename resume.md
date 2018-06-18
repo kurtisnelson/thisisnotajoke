@@ -8,7 +8,7 @@
 
 ### Experience {#experience}
 
-HopThru
+Hopthru
 : *Lead Engineer*
   __May 2018 - Present__
 
