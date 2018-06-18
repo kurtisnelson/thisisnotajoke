@@ -46,6 +46,22 @@ Georgia Tech Research Institute
 
 ------
 
+### Skills {#skills}
+
+1. Android, Android Wear
+1. Ruby, Java, Go, C, JS
+1. Ruby on Rails & Ember
+1. PostgresQL & MySQL
+1. Continous Integration
+1. Test Driven Development
+1. RESTful APIs
+1. Linux deployment
+1. AWS, Google Cloud
+1. DNS
+1. Datacenter Ops
+
+------
+
 ### Education {#education}
 
 Georgia Institute of Technology
@@ -58,16 +74,3 @@ Winter Park High School
   __2005-2009__
 
 ------
-
-### Skills {#skills}
-
-1. Android, Android Wear
-1. Ruby, Java, Go, C, JS
-1. Ruby on Rails
-1. PostgresQL & MySQL
-1. Ember
-1. Continous Integration/Testing best practices
-1. RESTful APIs
-1. Linux deployment
-1. Familiar with AWS and gCloud
-1. DNS, datacenter networking
