@@ -8,10 +8,6 @@
 
 ### Experience {#experience}
 
-Hopthru
-: *Lead Engineer*
-  __May 2018 - Present__
-
 Google
 : *Android Engineer*
   __December 2015-April 2018__
