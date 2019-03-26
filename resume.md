@@ -8,6 +8,11 @@
 
 ### Experience {#experience}
 
+Uber
+: *Senior Software Engineer*
+  __August 2018-Present__
+  I am on the Mobile Foundations team working across our suite of apps.
+
 Google
 : *Android Engineer*
   __December 2015-April 2018__
