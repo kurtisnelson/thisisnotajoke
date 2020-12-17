@@ -1,5 +1,6 @@
 ---
-layout: post
+slug: "foutube-like-jacking"
+date: '2011-03-13'
 title: 'FouTube Like Jacking'
 tags:
   - facebook
