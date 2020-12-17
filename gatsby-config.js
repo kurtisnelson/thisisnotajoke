@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Kurt Nelson",
+          title: "Kurt Nelson",
+          siteUrl: "https://thisisnotajoke.com",
   },
   plugins: [
     {
