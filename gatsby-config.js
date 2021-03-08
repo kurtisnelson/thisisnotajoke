@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-          title: "Kurt Nelson",
-          siteUrl: "https://thisisnotajoke.com",
+    title: "Kurt Nelson",
+    siteUrl: "https://thisisnotajoke.com",
   },
   plugins: [
     {
@@ -14,7 +14,6 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-offline",
-    "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
@@ -32,13 +31,5 @@ module.exports = {
       },
       __key: "pages",
     },
-    {
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      name: `markdown-pages`,
-      path: `${__dirname}/src/markdown-pages`,
-    },
-    },
-    "gatsby-transformer-remark",
   ],
 };
