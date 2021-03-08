@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Kurt Nelson",
-          siteUrl: "https://thisisnotajoke.com"
+    siteUrl: "https://thisisnotajoke.com",
   },
   plugins: [
     "gatsby-plugin-styled-components",
@@ -21,7 +21,22 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
-    "gatsby-plugin-mdx",
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        defaultLayouts: {
+          default: require.resolve("./src/components/layout.jsx"),
+        },
+        gatsbyRemarkPlugins: [
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
+      },
+    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
