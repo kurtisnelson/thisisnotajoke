@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 
 class Layout extends React.Component {
-
+  
   static get propTypes() {
               return {
                             children: PropTypes.object,
