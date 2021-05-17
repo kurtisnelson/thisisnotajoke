@@ -24,62 +24,62 @@ const ResumePage = () => {
           <dt>Uber</dt>
           <dd>
             <em>Senior Software Engineer</em>
-            <strong>August 2018-Present</strong>I am on the Mobile Foundations
-            team working across our suite of apps.
+          <br/>
+            <strong>August 2018-February 2021</strong>
+            <br />I was on the Mobile Foundations team working across our suite
+            of apps.
           </dd>
 
           <dt>Google</dt>
           <dd>
             <em>Android Engineer</em>
-            <strong>December 2015-April 2018</strong>I started on the Google
-            Glass/Wearables team and primarily worked on the companion app for a
-            new class of consumer hardware products. I then worked on Android
-            app foundations making cold-startup faster and shrinking APK size
-            along with improving the internal developer experience.
+          <br/>
+            <strong>December 2015-April 2018</strong>
+            <br />I started on the Google Glass/Wearables team and primarily
+            worked on the companion app for a new class of consumer hardware
+            products. I then worked on Android app foundations making
+            cold-startup faster and shrinking APK size along with improving the
+            internal developer experience.
           </dd>
 
           <dt>The Iron Yard</dt>
           <dd>
             <em>Ruby Instructor</em>
-            <strong>June 2015-December 2015</strong>I taught two 3-month cohorts
-            of backend engineering to complete beginners in Nashville, TN.
+          <br/>
+            <strong>June 2015-December 2015</strong>
+            <br />I taught two 3-month cohorts of backend engineering to
+            complete beginners in Nashville, TN.
           </dd>
 
           <dt>Atlanta Coding Company</dt>
           <dd>
             <em>Owner</em>
-            <strong>December 2014-May 2015</strong>I decided to head out on my
-            own and operate freelance, some of my clients included: Monsieur, an
-            Android powered bartending machine Scoutmob, a marketing and
-            discount coupon app
+          <br/>
+            <strong>December 2014-May 2015</strong>
+            <br />I decided to head out on my own and operate freelance, some of
+            my clients included: Monsieur, an Android powered bartending machine
+            Scoutmob, a marketing and discount coupon app
           </dd>
 
           <dt>Big Nerd Ranch</dt>
           <dd>
             <em>Android Engineer &amp; Instructor</em>
-            <strong>August 2012-December 2014</strong>I have done both Ruby and
-            Ruby on Rails backend and Android development for consulting clients
-            varying from multi-nationals to one man startups. Additionally I
-            taught the Android Bootcamp for corporate clients and am highly
-            knowledgable in the project process, from Pivotal Tracker to keeping
-            your Git history sane. I continued teaching the Android Bootcamp on
-            a contract basis.
-          </dd>
-
-          <dt>Wearscript</dt>
-          <dd>
-            <em>Co-creator</em>
-            <strong>July 2013-December 2014</strong>
-            Wearscript is a rapid prototyping framework for the internet of
-            things, centered around Google Glass. It is an open-source project
-            that allows developers to write javascript that is then interpreted
-            into native Android functions.
+          <br/>
+            <strong>August 2012-December 2014</strong>
+            <br />I have done both Ruby and Ruby on Rails backend and Android
+            development for consulting clients varying from multi-nationals to
+            one man startups. Additionally I taught the Android Bootcamp for
+            corporate clients and am highly knowledgable in the project process,
+            from Pivotal Tracker to keeping your Git history sane. I continued
+            teaching the Android Bootcamp on a contract basis.
           </dd>
 
           <dt>Georgia Tech Research Institute</dt>
           <dd>
             <em>Signature Technology Lab Co-op</em>
+          <br/>
             <strong>May 2011–July 2012</strong>
+            <br />
             In addition to holding a US Department of Defense Secret clearance,
             I supported both a Windows Domain and a Linux enterprise
             environment. I was responsible for a data center&#8217;s day to day
