@@ -69,7 +69,7 @@ const ResumePage = () => {
             <br />I have done both Ruby and Ruby on Rails backend and Android
             development for consulting clients varying from multi-nationals to
             one man startups. Additionally I taught the Android Bootcamp for
-            corporate clients and am highly knowledgable in the project process,
+            corporate clients and am highly knowledgeable in the project process,
             from Pivotal Tracker to keeping your Git history sane. I continued
             teaching the Android Bootcamp on a contract basis.
           </dd>
@@ -96,7 +96,7 @@ const ResumePage = () => {
           <li>Ruby, Java, Go, C, JS</li>
           <li>Ruby on Rails &amp; Ember</li>
           <li>PostgresQL &amp; MySQL</li>
-          <li>Continous Integration</li>
+          <li>Continuous Integration</li>
           <li>Test Driven Development</li>
           <li>RESTful APIs</li>
           <li>Linux deployment</li>
