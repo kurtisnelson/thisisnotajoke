@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/.well-known/webfinger"
+  to = "https://sfba.social/.well-known/webfinger?resource=acct:kurtisnelson@sfba.social"
+  query = {resource = ":resource"}
+  status = 200
