@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/.well-known/webfinger"
-  to = "https://nelson.fun/.well-known/webfinger?resource=acct:kurt@nelson.fun"
-  query = {resource = ":resource"}
-  status = 200
